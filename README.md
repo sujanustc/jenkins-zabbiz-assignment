@@ -60,12 +60,17 @@ Below are the visual validations of the successful Jenkins pipeline deployment:
 #### Jenkins Pipeline Stage View
 This screen demonstrates that all pipeline stages (Checkout, Install Dependencies, Run Tests, Docker Build & Push, Deploy) executed successfully in sequence.
 
-![Jenkins Pipeline Stages](./screenshots/jenkins-stages.png)
+![Jenkins Pipeline Stages](./screenshots/2.pipeline-success-jenkins.png)
 
 #### Successful Build Execution Console/Dashboard
-This screenshot verifies the final status of a successful build run (Build number marked in green).
+This screenshot verifies the final status of a successful build run.
 
-![Jenkins Successful Build](./screenshots/jenkins-build-success.png)
+![Jenkins Successful Build](./screenshots/1.Build-scheduled-jenkins.png)
+
+#### Application Running in Browser
+This screenshot verifies that the application is successfully deployed and reachable in the web browser at port 3000.
+
+![Application Running in Browser](./screenshots/3.application-running-on-browser.png)
 
 ---
 
@@ -92,17 +97,12 @@ stress --cpu 4 --timeout 120
 This simulated heavy CPU load, forcing utilization to 100%, successfully firing the Zabbix trigger.
 
 ### 4.3 Monitoring Screenshots
-Below are the visual validations of the Zabbix monitoring dashboard and trigger configurations:
+Below is the visual validation of the Zabbix monitoring dashboard:
 
 #### Zabbix Host Dashboard & System Metrics
 This screenshot demonstrates active, green host communication and CPU/Memory monitoring graphs in Zabbix.
 
-![Zabbix Dashboard](./screenshots/zabbix-dashboard.png)
-
-#### Trigger Configuration Page
-This screenshot shows the specific trigger rule configured for CPU monitoring.
-
-![Zabbix Trigger Configuration](./screenshots/zabbix-trigger.png)
+![Zabbix Dashboard](./screenshots/4.zabbix-dashboard.png)
 
 ---
 

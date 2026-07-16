@@ -140,9 +140,9 @@ This guide provides the instructions needed to deploy the Jenkins CI/CD pipeline
 
 1. Create a folder named `screenshots` in your local project repository root.
 2. Save your screenshots into this folder with these exact names:
-   * `jenkins-stages.png`
-   * `jenkins-build-success.png`
-   * `zabbix-dashboard.png`
-   * `zabbix-trigger.png`
+    * `1.Build-scheduled-jenkins.png`
+    * `2.pipeline-success-jenkins.png`
+    * `3.application-running-on-browser.png`
+    * `4.zabbix-dashboard.png`
 3. Push your repository to GitHub. The relative links in the `README.md` will display the images correctly!
 4. You can convert the markdown `README.md` into a Word document or PDF for final submission.
