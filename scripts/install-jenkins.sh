@@ -7,6 +7,9 @@
 
 set -e
 
+# Clean up any potential failed key files and old configs *before* updating packages
+sudo rm -f /usr/share/keyrings/jenkins-keyring.asc /usr/share/keyrings/jenkins-keyring.gpg /etc/apt/sources.list.d/jenkins.list
+
 echo "=== [1/5] Updating System Packages ==="
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -15,8 +18,6 @@ echo "=== [2/5] Installing Java 17 (Required by Jenkins) ==="
 sudo apt-get install -y openjdk-17-jdk gnupg curl wget ca-certificates apt-transport-https
 
 echo "=== [3/5] Installing Jenkins ==="
-# Clean up any potential failed key files and old configs
-sudo rm -f /usr/share/keyrings/jenkins-keyring.asc /usr/share/keyrings/jenkins-keyring.gpg /etc/apt/sources.list.d/jenkins.list
 
 # Download key, de-armor it to binary format, and register repository
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | gpg --dearmor | sudo tee /usr/share/keyrings/jenkins-keyring.gpg > /dev/null
