@@ -14,8 +14,9 @@ echo "=== [1/5] Updating System Packages ==="
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-echo "=== [2/5] Installing Java 17 (Required by Jenkins) ==="
-sudo apt-get install -y openjdk-17-jdk gnupg curl wget ca-certificates apt-transport-https
+echo "=== [2/5] Installing Java 21 (Required by Jenkins) ==="
+sudo apt-get install -y openjdk-21-jdk gnupg curl wget ca-certificates apt-transport-https
+sudo update-alternatives --set java /usr/lib/jvm/java-21-openjdk-amd64/bin/java
 
 echo "=== [3/5] Installing Jenkins ==="
 

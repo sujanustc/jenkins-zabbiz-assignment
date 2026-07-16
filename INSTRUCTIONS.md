@@ -43,7 +43,7 @@ This guide provides the instructions needed to deploy the Jenkins CI/CD pipeline
    chmod +x scripts/install-jenkins.sh
    sudo ./scripts/install-jenkins.sh
    ```
-   *Note: This installs Java 17, Jenkins, Docker, and Node.js. It also adds the `jenkins` user to the `docker` group.*
+   *Note: This installs Java 21, Jenkins, Docker, and Node.js. It also adds the `jenkins` user to the `docker` group.*
 
 4. **Run the Zabbix Setup Script:**
    ```bash
