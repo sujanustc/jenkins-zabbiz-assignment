@@ -1,0 +1,17 @@
+{
+  "name": "node-express-app",
+  "version": "1.0.0",
+  "description": "Simple Express app for Jenkins CI/CD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
