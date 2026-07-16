@@ -33,7 +33,11 @@ This guide provides the instructions needed to deploy the Jenkins CI/CD pipeline
    ```bash
    ssh -i "your-key.pem" ubuntu@<your-ec2-public-ip>
    ```
-2. Copy the scripts folder from this repository onto your server (or clone your repository on the EC2 instance).
+2. Clone your repository on the EC2 instance:
+   ```bash
+   git clone https://github.com/sujanustc/jenkins-zabbiz-assignment.git
+   cd jenkins-zabbiz-assignment
+   ```
 3. **Run the Jenkins Setup Script:**
    ```bash
    chmod +x scripts/install-jenkins.sh
@@ -78,8 +82,8 @@ This guide provides the instructions needed to deploy the Jenkins CI/CD pipeline
 3. Scroll down to the **Pipeline** section:
    * **Definition:** Select `Pipeline script from SCM`.
    * **SCM:** Select `Git`.
-   * **Repository URL:** Enter your GitHub Repository URL (containing the `Jenkinsfile` and `/app` folder).
-   * **Branch Specifier:** E.g., `*/main` or `*/master`.
+   * **Repository URL:** `https://github.com/sujanustc/jenkins-zabbiz-assignment.git`
+   * **Branch Specifier:** `*/main` (or the branch you pushed to).
    * **Script Path:** `Jenkinsfile` (default).
 4. Click **Save**.
 5. Click **Build Now** to execute the pipeline.
