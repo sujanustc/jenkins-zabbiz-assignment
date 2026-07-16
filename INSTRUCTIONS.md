@@ -144,6 +144,5 @@ This guide provides the instructions needed to deploy the Jenkins CI/CD pipeline
    * `jenkins-build-success.png`
    * `zabbix-dashboard.png`
    * `zabbix-trigger.png`
-   * `zabbix-alert-problem.png`
-3. Push your repository to GitHub. The relative links in the `REPORT.md` will display the images correctly!
-4. You can convert the markdown `REPORT.md` into a Word document or PDF for final submission.
+3. Push your repository to GitHub. The relative links in the `README.md` will display the images correctly!
+4. You can convert the markdown `README.md` into a Word document or PDF for final submission.

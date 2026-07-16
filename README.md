@@ -104,11 +104,6 @@ This screenshot shows the specific trigger rule configured for CPU monitoring.
 
 ![Zabbix Trigger Configuration](./screenshots/zabbix-trigger.png)
 
-#### Trigger Activation (Alerts / Problems Panel)
-This screenshot displays the activated alert in the "Problems" dashboard panel showing that CPU exceeded 80% load.
-
-![Zabbix Alert Triggered](./screenshots/zabbix-alert-problem.png)
-
 ---
 
 ## 5. Challenges Faced & Solutions

@@ -49,7 +49,7 @@ sudo mysql -e "GRANT ALL PRIVILEGES ON zabbix.* TO zabbix@localhost;"
 sudo mysql -e "SET GLOBAL log_bin_trust_function_creators = 1;"
 
 echo "=== [5/6] Installing Zabbix Server, Frontend, and Agent ==="
-sudo apt-get install -y zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+sudo apt-get install -y zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent php-mysql
 
 echo "Importing database schema (this may take a minute)..."
 # Locate the schema file (could be in /usr/share/zabbix-sql-scripts or /usr/share/doc)
